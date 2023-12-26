@@ -3,7 +3,7 @@
 #include <sstream>
 #include <string>
 
-enum class TokenType : char
+enum class TokenType
 {
     LEFT_PAREN, RIGHT_PAREN, LEFT_BRACE, RIGHT_BRACE,
     COMMA, DOT, MINUS, PLUS, SEMICOLON, SLASH, STAR,
