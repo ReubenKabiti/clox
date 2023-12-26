@@ -34,7 +34,7 @@ std::vector<Token> Scanner::scanTokens()
 
     Token eof = {
         TokenType::EOF_,
-        "",
+        "EOF",
         mLine,
         nullptr
     };
@@ -85,7 +85,7 @@ void Scanner::scanToken()
         default:
             if (isDigit(c))
                 number();
-            if (isAlpha(c))
+            else if (isAlpha(c))
                 identifier();
             else
                 mErrorLogger.error(mLine, std::string("Unexpected character: ") + c);

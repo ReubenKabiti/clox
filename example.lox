@@ -1,2 +1,2 @@
-var name = "reuben kabiti";
-var age = 19;
+var name = "John Doe";
+print name;
