@@ -9,6 +9,6 @@ void ErrorLogger::error(size_t line, std::string msg)
 
 void ErrorLogger::report(size_t line, std::string where, std::string msg)
 {
-    std::cout << "Error: [" << msg << "]" << where << " >> line: " << line << '\n';
+    std::cerr << "Error: [" << msg << "]" << where << " >> line: " << line << '\n';
     mHadError = true;
 }
